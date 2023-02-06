@@ -19,7 +19,7 @@ function FeedbackOptions({ options, leaveFeedback }) {
 
 
 FeedbackOptions.propTypes = {
-    options: PropTypes.array.isRequired,
+    options: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
     leaveFeedback: PropTypes.func.isRequired,
 };
 
